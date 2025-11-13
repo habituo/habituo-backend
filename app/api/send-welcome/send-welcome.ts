@@ -51,7 +51,7 @@ export default async function handler(
 
     // 3. Envía el correo
     const { error } = await resend.emails.send({
-      from: "Resend <onboarding@resend.dev>",
+      from: `Habituo <r@notifications.habituo.es>`,
       to: recipientEmail,
       subject: `¡Bienvenido a Habituo, ${name}!`,
       html: emailHtml,
