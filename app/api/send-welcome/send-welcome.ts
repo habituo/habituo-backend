@@ -7,13 +7,14 @@ import { NextApiRequest, NextApiResponse } from "next";
 // Define el origen permitido (Ajusta a la URL de tu frontend)
 const allowedOrigin = "https://habituo.es";
 
-// Inicializa Resend
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  // Inicializa Resend
+  const resend = new Resend(process.env.RESEND_API_KEY);
+
   // 1. Configurar CORS Headers
   res.setHeader("Access-Control-Allow-Origin", allowedOrigin);
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
