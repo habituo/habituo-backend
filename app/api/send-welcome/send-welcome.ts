@@ -1,7 +1,7 @@
 import { Resend } from "resend";
 import { render } from "@react-email/render";
 import * as React from "react";
-import CorreoBienvenida from "../../emails/CorreoBienvenida";
+import CorreoBienvenida from "../../../emails/CorreoBienvenida";
 import { NextApiRequest, NextApiResponse } from "next";
 
 // Define el origen permitido (Ajusta a la URL de tu frontend)
