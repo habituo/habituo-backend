@@ -52,7 +52,7 @@ export default async function handler(
 
     // 3. Envía el correo
     const { error } = await resend.emails.send({
-      from: 'r@notifications.habituo.es',
+      from: 'Habituo <hello@notifications.habituo.es>',
       to: recipientEmail,
       subject: `¡Bienvenido a Habituo, ${name}!`,
       html: emailHtml,
